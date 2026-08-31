@@ -23,5 +23,63 @@
     </nav>
   </header>
 
+  <main>
+
+    <section id="page-intro">
+        <h1>Tell Us About Your Business</h1>
+        <p>Fill in the form below and we'll get back to you with next steps. This form pre-qualifies your
+        enquiry so we can respond with relevant packages and availability & not a generic reply.</p>
+    </section>
+
+    <section id="enquiry-form">
+      <form id="enquiryForm" name="enquiryForm">
+
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="businessName">Business Name</label>
+        <input type="text" id="businessName" name="businessName" required>
+
+        <label for="enquiryType">Enquiry Type</label>
+        <select id="enquiryType" name="enquiryType" required>
+          <option value="">Please select</option>
+          <option value="sme">SME</option>
+          <option value="ecommerce">E-commerce</option>
+          <option value="corporate">Corporate</option>
+        </select>
+
+        <label for="serviceInterest">Service You're Interested In</label>
+        <select id="serviceInterest" name="serviceInterest" required>
+          <option value="">Please select</option>
+          <option value="ad-management">Social Media Ad Development &amp; Management</option>
+          <option value="content-creation">Content Creation</option>
+          <option value="community-management">Community Management</option>
+          <option value="analytics-reporting">Analytics &amp; Reporting</option>
+          <option value="content-strategy">Content Strategy</option>
+          <option value="not-sure">Not sure yet</option>
+        </select>
+
+        <label for="budgetRange">Estimated Monthly Budget</label>
+        <select id="budgetRange" name="budgetRange">
+          <option value="">Please select</option>
+          <option value="under-5k">Under R5,000</option>
+          <option value="5k-15k">R5,000 &ndash; R15,000</option>
+          <option value="15k-plus">R15,000+</option>
+        </select>
+
+        <label for="message">Tell us about your business and what you need</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+
+      </form>
+
+
+
+
+  </main>
 </body>
 </html>
