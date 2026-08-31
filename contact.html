@@ -50,7 +50,34 @@
         </address>
       </article>
     </section>
-    
+    <section id="contact-form">
+      <h2>Send a Message</h2>
+      <form id="contactForm" name="contactForm">
+
+        <label for="contactName">Full Name</label>
+        <input type="text" id="contactName" name="contactName" required>
+
+        <label for="contactEmail">Email Address</label>
+        <input type="email" id="contactEmail" name="contactEmail" required>
+
+        <label for="messageType">Message Type</label>
+        <select id="messageType" name="messageType" required>
+          <option value="">Please select</option>
+          <option value="general">General Question</option>
+          <option value="support">Existing Client Support</option>
+          <option value="media">Media / Press</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" name="contactMessage" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <div id="contactConfirmation" hidden></div>
+    </section>    
   </main>
 
     
