@@ -97,7 +97,7 @@ h3 {
   font-weight: 500;
 }
 
-site-header {
+.site-header {
   display: flex;
   min-height: 5.25rem;
   align-items: center;
