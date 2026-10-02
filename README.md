@@ -2,7 +2,7 @@
 
 A static HTML/CSS/JavaScript website built for **WEDE5020 — Web Development (Introduction)**, developed across Part 1 (structure), Part 2 (styling), and Part 3 (functionality) of the Portfolio of Evidence.
 
-**Live site (once deployed):** [qxmedia.co.za](https://qxmedia.co.za) *(domain registered via GoDaddy; site currently deployed via GitHub Pages for assessment purposes — see [Note on Deployment](#note-on-deployment) below)*
+**Live site (once deployed):** [qxmedia.co.za](https://qxmedia.co.za) *(domain registered via GoDaddy; site currently deployed via GitHub Pages for assessment purposes
 
 ---
 
