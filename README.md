@@ -10,10 +10,10 @@ A static HTML/CSS/JavaScript website built for **WEDE5020 — Web Development (I
 
 | | |
 |---|---|
-| **Student Name** | Siphile Lisahluma Ogiya-Onke Mbanga |
+| **Developer Name** | Siphile Lisahluma Ogiya-Onke Mbanga |
 | **Student Number** | ST10516309 |
 | **Module** | Web Development (Introduction) — WEDE5020 |
-| **Approved Organisation** | QX Media (Pty) Ltd |
+| **Organisation** | QX Media (Pty) Ltd |
 
 ---
 
@@ -99,7 +99,7 @@ and this section will be updated with new references in Part 2 and Part 3.
 - GitHub Docs. 2026. *What is GitHub Pages?* [Online] Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages [Accessed 17 August 2026].
 - Google Fonts. 2026. *Poppins.* [Online] Available at: https://fonts.google.com/specimen/Poppins [Accessed 17 August 2026].
 - rsms. 2024. *Inter.* [Online] Available at: https://github.com/rsms/inter [Accessed 17 August 2026].
-- GoDaddy. 2026. *Domain registration — qxmedia.co.za.* [Online] Available at: https://www.godaddy.com/ [Accessed — insert date of purchase].
+- GoDaddy. 2026. *Domain registration — qxmedia.co.za.* [Online] Available at: https://www.godaddy.com/
 - Top Click. 2026. *Best Digital Marketing Agency in South Africa.* [Online] Available at: https://topclick.co.za/ [Accessed 28 August 2026].
 - V8 Media. 2026. *V8 Media homepage.* [Online] Available at: https://v8media.co.za/ [Accessed 28 August 2026].
 - SearchKings Africa. 2026. *Google Ads Experts | Online Lead Generation Services.* [Online] Available at: https://searchkingsafrica.com/ [Accessed 28 August 2026].
