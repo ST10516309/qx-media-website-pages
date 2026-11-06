@@ -249,6 +249,19 @@ button[type="submit"]:active {
   transform: translateY(1px);
 }
 
+.hero .cta-button {
+  color: var(--deep-brown);
+  background: var(--warm-ivory);
+  border-color: var(--warm-ivory);
+  border-radius: 2px;
+}
+
+.hero .cta-button:hover {
+  color: var(--deep-brown);
+  background: var(--soft-taupe);
+  border-color: var(--soft-taupe);
+}
+
 .content-section,
 #founders,
 #locations,
@@ -667,4 +680,5 @@ footer p {
   html {
     scroll-behavior: auto;
   }
+
 }
