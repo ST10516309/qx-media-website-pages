@@ -159,4 +159,42 @@
       response.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   }
+
+    const statCounters = document.querySelectorAll('.stat-number[data-count]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (statCounters.length && !reduceMotion && 'IntersectionObserver' in window) {
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const stat = entry.target;
+        const target = Number(stat.dataset.count);
+        const suffix = stat.dataset.suffix || '';
+        const duration = 1200;
+        const startTime = performance.now();
+
+        stat.textContent = `0${suffix}`;
+
+        function updateCount(currentTime) {
+          const progress = Math.min((currentTime - startTime) / duration, 1);
+          const currentValue = Math.floor(target * progress);
+
+          stat.textContent = `${currentValue}${suffix}`;
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCount);
+          } else {
+            stat.textContent = `${target}${suffix}`;
+            statObserver.unobserve(stat);
+          }
+        }
+
+        requestAnimationFrame(updateCount);
+      });
+    }, { threshold: 0.5 });
+
+    statCounters.forEach((stat) => statObserver.observe(stat));
+  }
+  
 })();
