@@ -35,6 +35,7 @@ The site is built with HTML, CSS, and JavaScript. It does not use a database or 
 ## Features
 
 - Responsive layouts for desktop, tablet, and mobile screens.
+- QX Media monogram favicon in the browser tab.
 - Service search that filters service cards and reports the number of matching results.
 - Founder portraits that open in a dialog lightbox.
 - Embedded maps for the Johannesburg and Cape Town offices.
@@ -81,6 +82,7 @@ QX_Media/
 ├── about.html
 ├── contact.html
 ├── enquiry.html
+├── favicon.svg
 ├── index.html
 ├── services.html
 ├── README.md
@@ -110,6 +112,7 @@ QX_Media/
 
 ### Part 3 — JavaScript Functionality
 
+- Added an SVG favicon for browser tabs.
 - Added live search and result counts to the Services page.
 - Added a dialog lightbox for founder portraits.
 - Embedded maps for both office locations.
@@ -185,19 +188,3 @@ The following lesson notes from the repository informed the project:
 - GitHub Docs. *GitHub Pages*. https://docs.github.com/en/pages
 
 Business and competitor research sources are documented in the QX Media website proposal.
-
-
----
-
-- GitHub Docs. 2026. *What is GitHub Pages?* [Online] Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages [Accessed 17 August 2026].
-- Google Fonts. 2026. *Poppins.* [Online] Available at: https://fonts.google.com/specimen/Poppins [Accessed 17 August 2026].
-- rsms. 2024. *Inter.* [Online] Available at: https://github.com/rsms/inter [Accessed 17 August 2026].
-- GoDaddy. 2026. *Domain registration — qxmedia.co.za.* [Online] Available at: https://www.godaddy.com/
-- Top Click. 2026. *Best Digital Marketing Agency in South Africa.* [Online] Available at: https://topclick.co.za/ [Accessed 28 August 2026].
-- V8 Media. 2026. *V8 Media homepage.* [Online] Available at: https://v8media.co.za/ [Accessed 28 August 2026].
-- SearchKings Africa. 2026. *Google Ads Experts | Online Lead Generation Services.* [Online] Available at: https://searchkingsafrica.com/ [Accessed 28 August 2026].
-- MO Agency. 2026. *Elite HubSpot Partner South Africa.* [Online] Available at: https://www.mo.agency/ [Accessed 28 August 2026].
-- BlueMagnet. 2026. *BlueMagnet Digital Solutions homepage.* [Online] Available at: https://www.bluemagnet.co.za/ [Accessed 28 August 2026].
-- McRigour Media. 2026. *Our Partners — Clients page.* [Online] Available at: https://mcrigourmedia.com/clients/ [Accessed 28 August 2026; automated fetch blocked by robots.txt, page reviewed via supplied screenshot].
-- Vistas AD Media Communications. 2026. *Web Design Trends in 2026 — Future-Ready Design Insights.* [Online] Available at: https://dev.to/nandha-vistas/web-design-trends-in-2026-future-ready-design-insights-4nkg [Accessed 17 August 2026].
-- Adobe Express. 2026. *Website Design and Development Trends in 2026: What Businesses Must Adopt Now.* [Online] Available at: https://new.express.adobe.com/webpage/aeS30iclgs1uh [Accessed 17 August 2026].
