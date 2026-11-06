@@ -1,8 +1,9 @@
 # QX Media Website
 
-A static HTML/CSS/JavaScript website built for **WEDE5020 — Web Development (Introduction)**, developed across Part 1 (structure), Part 2 (styling), and Part 3 (functionality) of the Portfolio of Evidence.
+A responsive, multi-page website for QX Media (Pty) Ltd, a South African digital marketing agency. The site presents the agency's services, introduces its founders, and helps visitors make service enquiries or contact either office.
 
-**Live site (once deployed):** [qxmedia.co.za](https://qxmedia.co.za) *(domain registered via GoDaddy; site currently deployed via GitHub Pages for assessment purposes
+**Live website:** Add the published URL here after deployment.  
+**Part 3 repository:** [wede5020-2026-part-3-st10516309](https://github.com/EMGPSD/wede5020-2026-part-3-st10516309)
 
 ---
 
@@ -10,8 +11,8 @@ A static HTML/CSS/JavaScript website built for **WEDE5020 — Web Development (I
 
 | | |
 |---|---|
-| **Developer Name** | Siphile Lisahluma Ogiya-Onke Mbanga |
-| **Student Number** | ST10516309 |
+| **Developer** | Siphile Lisahluma Ogiya-Onke Mbanga |
+| **Student number** | ST10516309 |
 | **Module** | Web Development (Introduction) — WEDE5020 |
 | **Organisation** | QX Media (Pty) Ltd |
 
@@ -19,82 +20,174 @@ A static HTML/CSS/JavaScript website built for **WEDE5020 — Web Development (I
 
 ## Project Overview
 
-QX Media is positioned as a small, two-person, 2023-founded South African social media marketing
-agency offering content creation, community management, analytics & reporting, and content
-strategy services to small businesses, e-commerce brands, and corporate marketing teams. The
-website's goals are to generate qualified enquiry leads, establish credibility for a business with no
-prior web presence, and pre-qualify enquiries by service type before a consultation.
+The website gives small businesses, e-commerce brands, and corporate teams information about QX Media's digital marketing services. Its main goals are to build trust, explain the available packages, and help prospective clients send a relevant enquiry.
 
-Full background, goals, competitor research, and design rationale are documented in the
-**Website Project Proposal** (submitted separately as part of Part 1).
+The site is built with HTML, CSS, and JavaScript. It does not use a database or a server-side API.
 
----
+## Pages
 
-## Sitemap
+- **Home** (`index.html`) — introduction, service highlights, results, and company overview.
+- **About Us** (`about.html`) — company background, founder profiles, and mission and vision.
+- **Services** (`services.html`) — five services, package information, and service search.
+- **Enquire** (`enquiry.html`) — a form for service and budget enquiries.
+- **Contact** (`contact.html`) — Johannesburg and Cape Town office details, maps, and a general contact form.
 
-<img width="492" height="369" alt="Sitemap" src="https://github.com/user-attachments/assets/53ed2de8-d1ae-46ad-b0c4-1502aafc7cc4" />
+## Features
 
+- Responsive layouts for desktop, tablet, and mobile screens.
+- Service search that filters service cards and reports the number of matching results.
+- Founder portraits that open in a dialog lightbox.
+- Embedded maps for the Johannesburg and Cape Town offices.
+- Client-side validation and accessible feedback for the enquiry and contact forms.
+- Enquiry form response that summarizes the selected service and guide prices.
+- Email links that prepare an enquiry or contact message in the visitor's email application.
+- Homepage statistics that count up when they enter the viewport. The animation respects the visitor's reduced-motion setting.
 
-Five pages, all linked from a single persistent navigation bar:
+### Form behavior
 
-- **Homepage** (`index.html`) — hero, How It Works, service highlights, results strip, founder trust strip
-- **About Us** (`about.html`) — company history, founder bio, mission & vision
-- **Services** (`services.html`) — four services with package tiers
-- **Enquiry** (`enquiry.html`) — service-specific lead-qualification form
-- **Contact** (`contact.html`) — two office locations, map, general contact form
+The forms do not send data to a server. After validation, the site creates a `mailto:` link with the entered details. The visitor must open the link in an email application and send the message. No form data is stored by this website.
 
----
+## Technology
 
-## Technology Stack
+- **HTML5** for page structure and content.
+- **CSS3** for the visual design, responsive layouts, and interactive states.
+- **JavaScript** for service search, the founder lightbox, form validation and responses, and animated statistics.
+- **Google Fonts** for the Inter and Poppins typefaces.
+- **Google Maps** for the office map embeds.
+- **Git and GitHub** for version control.
+- **GitHub Pages** for assessment hosting, if enabled for the repository.
 
-- **HTML5** — page structure and semantic content
-- **CSS3** — styling and responsive layout (built in Part 2)
-- **JavaScript** — client-side form validation and processing (built in Part 3). Per module
-  requirement, **no third-party form service** (Formspree, Google Forms, etc.) is used —
-  all form logic is custom-written.
-- **Git / GitHub** — version control
-- **GitHub Pages** — hosting for the duration of assessment
+## Run Locally
 
----
+Open `index.html` in a browser, or serve the project folder with a local static web server such as the Visual Studio Code Live Server extension. Keep the `css`, `images`, and `js` folders alongside the HTML files so their relative links resolve.
+
+## Browser Checks
+
+The following interactions were checked in a browser:
+
+- Search for a service and confirm non-matching cards are hidden.
+- Open and close each founder portrait lightbox.
+- Confirm both office maps display.
+- Submit each form empty and confirm validation feedback appears.
+- Complete each form and confirm the email link is created.
+- Scroll to the homepage Results section and confirm the statistics count up.
+
+JavaScript syntax was also checked with `node --check js/app.js`.
 
 ## Folder Structure
 
+```text
 QX_Media/
-├── index.html
 ├── about.html
-├── services.html
-├── enquiry.html
 ├── contact.html
+├── enquiry.html
+├── index.html
+├── services.html
+├── README.md
 ├── css/
-│   └── main.css       
-├── js/
-│   ├── app.js    
-│           
-├── images/                
+│   └── main.css
+├── images/
+│   └── website images and logo files
+└── js/
+    └── app.js
 ```
+
 ## Changelog
 
-All changes are logged here throughout Parts 1–3, per module requirement.
-
 ### Part 1 — Project Initiation and Planning
-- Initial repository structure created (`css/`, `js/`, `images/` folders).
-- Website Project Proposal completed and approved by lecturer (QX Media selected from two
-  approved proposals).
-- Sitemap created.
-- Five HTML pages built with semantic structure (`header`, `nav`, `main`, `footer`) and a
-  consistent navigation system: `index.html`, `about.html`, `services.html`, `enquiry.html`,
-  `contact.html`.
-- Draft fictionalised content added to all pages (company history, services, founder bio).
-- Placeholder `css/style.css`, `js/enquiry.js`, `js/contact.js` created, linked from HTML, and
-  left empty pending Part 2/3 work.
 
----
+- Created the project repository and the `css`, `js`, and `images` folders.
+- Selected QX Media as the organisation and completed the website proposal.
+- Created the sitemap and built the five main HTML pages with shared navigation.
+- Added initial content about the company, services, founders, and contact details.
+
+### Part 2 — CSS and Responsive Design
+
+- Built the site's visual system with reusable CSS variables, typography, spacing, cards, and form styles.
+- Added responsive layouts for desktop, tablet, and mobile screen sizes.
+- Added hover, active, and keyboard-visible focus states for interactive elements.
+- Kept images responsive and adapted multi-column sections for smaller screens.
+
+### Part 3 — JavaScript Functionality
+
+- Added live search and result counts to the Services page.
+- Added a dialog lightbox for founder portraits.
+- Embedded maps for both office locations.
+- Added client-side validation, accessible feedback, service and package summaries, and email links for both forms.
+- Added animated counters to the homepage Results section, with reduced-motion support.
 
 ## References
 
-References specific to the QX Media organisation and Website Project Proposal are listed in full
-in the Proposal document. General references used across Part 1 development are compiled here,
-and this section will be updated with new references in Part 2 and Part 3.
+### Course lecture notes
+
+Sookha, J. (n.d.). *WEDE2026 Introduction to Web Development lecture notes*. GitHub. Available at: [WEDE2026 course notes repository](https://github.com/jesselsookha/WEDE2026/tree/main/docs) (Accessed: 7 November 2026).
+
+The following lesson notes from the repository informed the project:
+
+**Website planning and HTML**
+
+- [01 — Why Websites Matter](https://github.com/jesselsookha/WEDE2026/blob/main/docs/01_why-websites-matter.md)
+- [02 — What Makes a Successful Website](https://github.com/jesselsookha/WEDE2026/blob/main/docs/02_what-makes-a-successful-website.md)
+- [03 — Website Strategy and Measurement](https://github.com/jesselsookha/WEDE2026/blob/main/docs/03_website-strategy-and-measurement.md)
+- [04 — File Structure and VS Code](https://github.com/jesselsookha/WEDE2026/blob/main/docs/04_file-structure-vscode.md)
+- [05 — HTML Basics](https://github.com/jesselsookha/WEDE2026/blob/main/docs/05_html_basics.md)
+- [06 — HTML Content](https://github.com/jesselsookha/WEDE2026/blob/main/docs/06_html_content.md)
+- [07 — HTML Tables and Forms](https://github.com/jesselsookha/WEDE2026/blob/main/docs/07_html_tables_forms.md)
+- [08 — HTML Best Practices](https://github.com/jesselsookha/WEDE2026/blob/main/docs/08_html_best_practices.md)
+- [09 — HTML Anatomy](https://github.com/jesselsookha/WEDE2026/blob/main/docs/09_html_anatomy.md)
+- [10 — HTML Social Media](https://github.com/jesselsookha/WEDE2026/blob/main/docs/10_html_social.md)
+
+**CSS and responsive design**
+
+- [11 — CSS Introduction](https://github.com/jesselsookha/WEDE2026/blob/main/docs/11_css_intro.md)
+- [12 — CSS Syntax and Selectors](https://github.com/jesselsookha/WEDE2026/blob/main/docs/12_css_syntax_selectors.md)
+- [13 — CSS Box Model](https://github.com/jesselsookha/WEDE2026/blob/main/docs/13_css_box_model.md)
+- [14 — CSS Typography and Colour](https://github.com/jesselsookha/WEDE2026/blob/main/docs/14_css_typography_color.md)
+- [15 — CSS Flexbox](https://github.com/jesselsookha/WEDE2026/blob/main/docs/15_css_flexbox.md)
+- [16 — CSS Grid](https://github.com/jesselsookha/WEDE2026/blob/main/docs/16_css_grid.md)
+- [17 — CSS Animations](https://github.com/jesselsookha/WEDE2026/blob/main/docs/17_css_animations.md)
+- [18 — CSS Best Practices](https://github.com/jesselsookha/WEDE2026/blob/main/docs/18_css_best_practices.md)
+- [19 — Responsive Web Design Introduction](https://github.com/jesselsookha/WEDE2026/blob/main/docs/19_rwd_intro.md)
+- [20 — Responsive Media Queries](https://github.com/jesselsookha/WEDE2026/blob/main/docs/20_rwd_media_queries.md)
+- [21 — Mobile-First Responsive Design](https://github.com/jesselsookha/WEDE2026/blob/main/docs/21_rwd_mobile_first.md)
+- [22 — Responsive Images and Navigation](https://github.com/jesselsookha/WEDE2026/blob/main/docs/22_rwd_images_nav.md)
+- [23 — Responsive Frameworks and Testing](https://github.com/jesselsookha/WEDE2026/blob/main/docs/23_rwd_frameworks_testing.md)
+- [24 — Responsive Design Checklist and Project](https://github.com/jesselsookha/WEDE2026/blob/main/docs/24_rwd_checklist_project.md)
+
+**JavaScript, SEO, and publishing**
+
+- [25 — JavaScript Introduction](https://github.com/jesselsookha/WEDE2026/blob/main/docs/25_js_intro.md)
+- [26 — JavaScript Syntax](https://github.com/jesselsookha/WEDE2026/blob/main/docs/26_js_syntax.md)
+- [27 — JavaScript Functions and Conditionals](https://github.com/jesselsookha/WEDE2026/blob/main/docs/27_js_functions_conditionals.md)
+- [28 — JavaScript Loops and Arrays](https://github.com/jesselsookha/WEDE2026/blob/main/docs/28_js_loops_arrays.md)
+- [29 — JavaScript DOM](https://github.com/jesselsookha/WEDE2026/blob/main/docs/29_js_dom.md)
+- [30 — JavaScript Events](https://github.com/jesselsookha/WEDE2026/blob/main/docs/30_js_events.md)
+- [31 — JavaScript Form Validation](https://github.com/jesselsookha/WEDE2026/blob/main/docs/31_js_form_validation.md)
+- [32 — JavaScript Project Sprint](https://github.com/jesselsookha/WEDE2026/blob/main/docs/32_js_project_sprint.md)
+- [33 — JavaScript Libraries and APIs](https://github.com/jesselsookha/WEDE2026/blob/main/docs/33_js_libraries_apis.md)
+- [34 — JavaScript Asynchronous APIs](https://github.com/jesselsookha/WEDE2026/blob/main/docs/34_js_async_apis.md)
+- [35 — JavaScript Capstone](https://github.com/jesselsookha/WEDE2026/blob/main/docs/35_js_capstone.md)
+- [36 — SEO Fundamentals](https://github.com/jesselsookha/WEDE2026/blob/main/docs/36_seo_fundamentals.md)
+- [37 — SEO for Developers](https://github.com/jesselsookha/WEDE2026/blob/main/docs/37_seo_developers.md)
+- [38 — Publishing Workflow](https://github.com/jesselsookha/WEDE2026/blob/main/docs/38_publishing_workflow.md)
+- [39 — FTP Deployment](https://github.com/jesselsookha/WEDE2026/blob/main/docs/39_ftp_deployment.md)
+- [40 — Analytics and Measurement](https://github.com/jesselsookha/WEDE2026/blob/main/docs/40_analytics_measurement.md)
+- [41 — Final Project Launch Checklist](https://github.com/jesselsookha/WEDE2026/blob/main/docs/41_launch_checklist_final_project.md)
+
+**Additional course resource**
+
+- [X — Boilerplates](https://github.com/jesselsookha/WEDE2026/blob/main/docs/x_boilerplates.md)
+
+### Technical references
+
+- Google Fonts. *Inter* and *Poppins*. https://fonts.google.com/
+- Google Maps Platform. *Maps Embed API*. https://developers.google.com/maps/documentation/embed/embedding-map
+- GitHub Docs. *GitHub Pages*. https://docs.github.com/en/pages
+
+Business and competitor research sources are documented in the QX Media website proposal.
+
+
+---
 
 - GitHub Docs. 2026. *What is GitHub Pages?* [Online] Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages [Accessed 17 August 2026].
 - Google Fonts. 2026. *Poppins.* [Online] Available at: https://fonts.google.com/specimen/Poppins [Accessed 17 August 2026].
