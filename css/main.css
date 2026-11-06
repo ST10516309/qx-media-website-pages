@@ -438,6 +438,43 @@ button[type="submit"]:active {
   font-style: normal;
 }
 
+.service-search {
+  margin-block: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+}
+
+.service-search h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.45rem;
+}
+
+.service-search label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.service-search input {
+  width: min(100%, 34rem);
+  min-height: 2.9rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #aab9b3;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#serviceSearchStatus {
+  margin-top: 0.65rem;
+  color: var(--muted);
+}
+
+.service-detail[hidden] {
+  display: none !important;
+}
+
 #enquiry-form,
 #contact-form {
   max-width: 48rem;
