@@ -375,6 +375,69 @@ button[type="submit"]:active {
   object-fit: cover;
 }
 
+.gallery-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.gallery-trigger img {
+  transition: transform 180ms ease;
+}
+
+.gallery-trigger:hover img {
+  transform: scale(1.025);
+}
+
+.founder-bio h3,
+.founder-bio p {
+  margin: 0.75rem 1rem 0;
+  text-align: center;
+}
+
+.founder-bio p {
+  margin-top: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.lightbox {
+  width: min(90vw, 50rem);
+  max-width: none;
+  max-height: 90vh;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.lightbox::backdrop {
+  background: rgb(20 16 16 / 78%);
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: calc(90vh - 5rem);
+  object-fit: contain;
+}
+
+.lightbox-close {
+  display: block;
+  min-height: 2.75rem;
+  margin: 0 0 0.75rem auto;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
 #mission-vision {
   padding: 2rem;
   border-radius: 6px;
