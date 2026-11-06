@@ -501,6 +501,15 @@ button[type="submit"]:active {
   font-style: normal;
 }
 
+.office-map {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1.25rem;
+  border: 0;
+  border-radius: 4px;
+}
+
 .service-search {
   margin-block: 2rem;
   padding: 1.25rem;
