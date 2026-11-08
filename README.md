@@ -32,6 +32,18 @@ The site is built with HTML, CSS, and JavaScript. It does not use a database or 
 - **Enquire** (`/enquire/`) — a form for service and budget enquiries.
 - **Contact** (`/contact/`) — Johannesburg and Cape Town office details, maps, and a general contact form.
 
+## Site Map
+
+```text
+Home (/)
+├── About Us (/about/)
+├── Services (/services/)
+├── Enquire (/enquire/)
+└── Contact (/contact/)
+```
+
+The XML sitemap for search engines is in [`sitemap.xml`](sitemap.xml) and lists these five public page URLs.
+
 ## Features
 
 - Responsive layouts for desktop, tablet, and mobile screens.
