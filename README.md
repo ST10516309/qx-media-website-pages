@@ -70,7 +70,15 @@ The forms do not send data to a server. After validation, the site creates a `ma
 - **Google Fonts** for the Inter and Poppins typefaces.
 - **Google Maps** for the office map embeds.
 - **Git and GitHub** for version control.
-- **GitHub Pages** for assessment hosting, if enabled for the repository.
+- **GitHub Pages** for publishing a separate public Pages copy of the website.
+
+## Publish with GitHub Pages
+
+Follow the course [GitHub Pages publishing guide and checklist](https://github.com/jesselsookha/WEDE2026/blob/main/support/6_Part_3_Publish_Guide_GHPages_Checklist.md) when publishing. Keep the official EMGPSD submission folder connected to its course repository. Publish a separate public copy from your personal GitHub account, with its own Git remote, and enable Pages from the `main` branch and `/ (root)`.
+
+The entry page (`index.html`) and custom error page (`404.html`) must stay in the repository root. Keep CSS, JavaScript, image, favicon, and page links relative so they work under the GitHub Pages repository subpath. After publishing, test the live Pages URL and all navigation, styling, images, JavaScript features, mobile layout, and the custom 404 page.
+
+The current `sitemap.xml` and `robots.txt` use `https://qxmedia.co.za`. Keep these URLs only once the custom domain is connected to GitHub Pages. If publishing at the default `github.io` address first, update both files to use that published address before asking search engines to crawl the site.
 
 ## Run Locally
 
@@ -207,6 +215,7 @@ The following lesson notes from the repository informed the project:
 - [X — Boilerplates](https://github.com/jesselsookha/WEDE2026/blob/main/docs/x_boilerplates.md)
 
 ### Technical references
+- Sookha, J. (2026). *Publishing Your Assignment Website via GitHub Pages: Checklist*. WEDE2026 course support guide. https://github.com/jesselsookha/WEDE2026/blob/main/support/6_Part_3_Publish_Guide_GHPages_Checklist.md (Accessed: 8 November 2026).
 
 - Google Fonts. *Inter* and *Poppins*. https://fonts.google.com/
 - Google Maps Platform. *Maps Embed API*. https://developers.google.com/maps/documentation/embed/embedding-map
@@ -215,4 +224,5 @@ The following lesson notes from the repository informed the project:
 Business and competitor research sources are documented in the QX Media website proposal.
 
 - Apache Software Foundation. (n.d.). *mod_dir: DirectoryIndex*. Apache HTTP Server Version 2.4 Documentation. https://httpd.apache.org/docs/2.4/mod/mod_dir.html (Accessed: 8 November 2026).
+
 
