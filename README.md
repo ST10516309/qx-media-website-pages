@@ -31,6 +31,7 @@ The site is built with HTML, CSS, and JavaScript. It does not use a database or 
 - **Services** (`/services/`) — five services, package information, and service search.
 - **Enquire** (`/enquire/`) — a form for service and budget enquiries.
 - **Contact** (`/contact/`) — Johannesburg and Cape Town office details, maps, and a general contact form.
+- **Not Found** (`/404.html`) — branded guidance and links for visitors who open an unknown URL.
 
 ## Site Map
 
@@ -47,6 +48,7 @@ The XML sitemap for search engines is in [`sitemap.xml`](sitemap.xml) and lists 
 ## Features
 
 - Responsive layouts for desktop, tablet, and mobile screens.
+- Branded 404 page with links back to the home page and services.
 - QX Media monogram favicon in the browser tab.
 - Service search that filters service cards and reports the number of matching results.
 - Founder portraits that open in a dialog lightbox.
@@ -91,6 +93,7 @@ JavaScript syntax was also checked with `node --check js/app.js`.
 
 ```text
 QX_Media/
+├── 404.html
 ├── about/
 │   └── index.html
 ├── contact/
@@ -139,6 +142,7 @@ QX_Media/
 - Embedded maps for both office locations.
 - Added client-side validation, accessible feedback, service and package summaries, and email links for both forms.
 - Added animated counters to the homepage Results section, with reduced-motion support.
+- Added a branded `404.html` page for unknown URLs.
 
 ## References
 
@@ -211,3 +215,4 @@ The following lesson notes from the repository informed the project:
 Business and competitor research sources are documented in the QX Media website proposal.
 
 - Apache Software Foundation. (n.d.). *mod_dir: DirectoryIndex*. Apache HTTP Server Version 2.4 Documentation. https://httpd.apache.org/docs/2.4/mod/mod_dir.html (Accessed: 8 November 2026).
+

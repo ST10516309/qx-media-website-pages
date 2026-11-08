@@ -795,3 +795,28 @@ footer p {
   }
 
 }
+/* Branded missing-page layout */
+.not-found {
+  display: grid;
+  min-height: min(60vh, 38rem);
+  align-content: center;
+  justify-items: start;
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.not-found-code {
+  margin-bottom: 0.75rem;
+  color: var(--muted-brown);
+  letter-spacing: 0.08em;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.not-found-actions a:not(.cta-button) {
+  font-weight: 650;
+}

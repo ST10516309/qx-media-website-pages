@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The page you requested could not be found. Visit QX Media's home page or explore our services.">
+    <title>Page Not Found | QX Media</title>
+    <script>
+        const basePath = location.hostname.endsWith(".github.io")
+            ? `/${location.pathname.split("/").filter(Boolean)[0]}/`
+            : location.protocol === "file:" ? "./" : "/";
+        const siteBase = document.createElement("base");
+        siteBase.href = basePath;
+        document.head.append(siteBase);
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="./" aria-label="QX Media home">
+            <img src="images/qx-logo-dark-on-ivory.png" alt="QX Media (Pty) Ltd">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="about/">About Us</a></li>
+                <li><a href="services/">Services</a></li>
+                <li><a href="enquire/">Enquire</a></li>
+                <li><a href="contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="content-section not-found" aria-labelledby="not-found-title">
+            <p class="eyebrow not-found-code">404 — Page not found</p>
+            <h1 id="not-found-title">We can’t find that page.</h1>
+            <p>The address may be incorrect, or the page may have moved. Use one of these links to continue.</p>
+            <div class="not-found-actions">
+                <a class="cta-button" href="./">Back to Home</a>
+                <a href="services/">Explore our services</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer-logo" href="./" aria-label="QX Media home">
+            <img src="images/qx-logo-white-on-dark.png" alt="QX Media (Pty) Ltd">
+        </a>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="about/">About Us</a></li>
+                <li><a href="services/">Services</a></li>
+                <li><a href="enquire/">Enquire</a></li>
+                <li><a href="contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 QX Media (Pty) Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
