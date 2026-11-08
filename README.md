@@ -2,8 +2,9 @@
 
 A responsive, multi-page website for QX Media (Pty) Ltd, a South African digital marketing agency. The site presents the agency's services, introduces its founders, and helps visitors make service enquiries or contact either office.
 
-**Live website:** Add the published URL here after deployment.  
+**Live website:** https://st10516309.github.io/qx-media-website-pages/  
 **Part 3 repository:** [wede5020-2026-part-3-st10516309](https://github.com/EMGPSD/wede5020-2026-part-3-st10516309)
+ 
 
 ---
 
