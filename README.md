@@ -26,11 +26,11 @@ The site is built with HTML, CSS, and JavaScript. It does not use a database or 
 
 ## Pages
 
-- **Home** (`index.html`) — introduction, service highlights, results, and company overview.
-- **About Us** (`about.html`) — company background, founder profiles, and mission and vision.
-- **Services** (`services.html`) — five services, package information, and service search.
-- **Enquire** (`enquiry.html`) — a form for service and budget enquiries.
-- **Contact** (`contact.html`) — Johannesburg and Cape Town office details, maps, and a general contact form.
+- **Home** (`/`) — introduction, service highlights, results, and company overview.
+- **About Us** (`/about/`) — company background, founder profiles, and mission and vision.
+- **Services** (`/services/`) — five services, package information, and service search.
+- **Enquire** (`/enquire/`) — a form for service and budget enquiries.
+- **Contact** (`/contact/`) — Johannesburg and Cape Town office details, maps, and a general contact form.
 
 ## Features
 
@@ -60,7 +60,7 @@ The forms do not send data to a server. After validation, the site creates a `ma
 
 ## Run Locally
 
-Open `index.html` in a browser, or serve the project folder with a local static web server such as the Visual Studio Code Live Server extension. Keep the `css`, `images`, and `js` folders alongside the HTML files so their relative links resolve.
+Serve the project root with a local static web server such as the Visual Studio Code Live Server extension. The route folders (`about/`, `services/`, `enquire/`, and `contact/`) sit beside the shared `css`, `images`, and `js` folders.
 
 ## Browser Checks
 
@@ -79,13 +79,19 @@ JavaScript syntax was also checked with `node --check js/app.js`.
 
 ```text
 QX_Media/
-├── about.html
-├── contact.html
-├── enquiry.html
+├── about/
+│   └── index.html
+├── contact/
+│   └── index.html
+├── enquire/
+│   └── index.html
 ├── favicon.svg
 ├── index.html
-├── services.html
+├── robots.txt
+├── services/
+│   └── index.html
 ├── README.md
+├── sitemap.xml
 ├── css/
 │   └── main.css
 ├── images/
@@ -113,6 +119,9 @@ QX_Media/
 ### Part 3 — JavaScript Functionality
 
 - Added an SVG favicon for browser tabs.
+- Added page-specific search titles and descriptions.
+- Added `sitemap.xml` and `robots.txt` for the public domain.
+- Moved the About, Services, Enquire, and Contact pages to clean folder URLs.
 - Added live search and result counts to the Services page.
 - Added a dialog lightbox for founder portraits.
 - Embedded maps for both office locations.
@@ -188,3 +197,5 @@ The following lesson notes from the repository informed the project:
 - GitHub Docs. *GitHub Pages*. https://docs.github.com/en/pages
 
 Business and competitor research sources are documented in the QX Media website proposal.
+
+- Apache Software Foundation. (n.d.). *mod_dir: DirectoryIndex*. Apache HTTP Server Version 2.4 Documentation. https://httpd.apache.org/docs/2.4/mod/mod_dir.html (Accessed: 8 November 2026).
