@@ -72,14 +72,6 @@ The forms do not send data to a server. After validation, the site creates a `ma
 - **Git and GitHub** for version control.
 - **GitHub Pages** for publishing a separate public Pages copy of the website.
 
-## Publish with GitHub Pages
-
-Follow the course [GitHub Pages publishing guide and checklist](https://github.com/jesselsookha/WEDE2026/blob/main/support/6_Part_3_Publish_Guide_GHPages_Checklist.md) when publishing. Keep the official EMGPSD submission folder connected to its course repository. Publish a separate public copy from your personal GitHub account, with its own Git remote, and enable Pages from the `main` branch and `/ (root)`.
-
-The entry page (`index.html`) and custom error page (`404.html`) must stay in the repository root. Keep CSS, JavaScript, image, favicon, and page links relative so they work under the GitHub Pages repository subpath. After publishing, test the live Pages URL and all navigation, styling, images, JavaScript features, mobile layout, and the custom 404 page.
-
-The current `sitemap.xml` and `robots.txt` use `https://qxmedia.co.za`. Keep these URLs only once the custom domain is connected to GitHub Pages. If publishing at the default `github.io` address first, update both files to use that published address before asking search engines to crawl the site.
-
 ## Run Locally
 
 Serve the project root with a local static web server such as the Visual Studio Code Live Server extension. The route folders (`about/`, `services/`, `enquire/`, and `contact/`) sit beside the shared `css`, `images`, and `js` folders.
